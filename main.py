@@ -2,9 +2,9 @@ running = True
 unsavedLogs = []
 
 try:
-    f = open("loggar.txt", "r")
+    f = open("savedLogs.txt", "r")
 except:
-    f = open("loggar.txt", "w+")
+    f = open("savedLogs.txt", "w+")
 f.close()
 
 
