@@ -24,8 +24,8 @@ while running == True:
     
     if choice == 1:
         f = open("savedLogs.txt", "r")
-        innehåll = f.read()
-        print(innehåll)
+        data = f.read()
+        print(data)
         f.close
     elif choice == 2:
         print('Skriv din logg här!')
@@ -33,7 +33,6 @@ while running == True:
         unsavedLogs.append(newLog)
     elif choice == 3:
         f = open("savedLogs.txt", "a")
-        # for saveLog in unsavedLogs:
         for log in unsavedLogs:
             f.write(log + "\n")
         f.close
